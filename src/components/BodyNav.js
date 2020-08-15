@@ -1,13 +1,32 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import {withRouter, Link} from 'react-router-dom'
 
-const BodyNav = () => {
-    return <>
+const BodyNav = ({history, location, match}) => {
+
+    const [activeLink, setActiveLink] = useState('/')
+
+    useEffect(() => {
+        setActiveLink(location.pathname);
+    }, [location.pathname])
+
+    const isActive = (name) => {
+        if(`/${name}` === activeLink){
+            return 'active'
+        }else if(name === 'work' && activeLink === '/'){
+            return 'active'
+        }
+        return 'text-muted'
+    }
+
+    const defaultListClassName = 'text-decoration-none nav-link'
+
+    return <nav className="text-muted" style={{margin:'85px 0px 35px 0px'}}>
         <ol start="0">
-            <li>Work</li>
-            <li>RESUME</li>
-            <li>Contact</li>
+            <li className="p-2"><Link to="/work" className={`${defaultListClassName} ${isActive('work')}`}>WORK</Link></li>
+            <li className="p-2"><Link to="/resume" className={`${defaultListClassName} ${isActive('resume')}`}>RESUME</Link></li>
+            <li className="p-2"><Link to="/contact" className={`${defaultListClassName} ${isActive('contact')}`}>CONTACT</Link></li>
         </ol>
-    </>
+    </nav>
 }
 
-export default BodyNav
+export default withRouter(BodyNav)

@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <div className="row">
-        <div className="col-lg-6">
+        <div className="col-lg-6 w-100vh">
           <LandingPage />
         </div>
         <div className="col-lg-6">
