@@ -1,14 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
     return <>
         <h2>Sandip.</h2>
-        <a>
+        <Link>
             <img src="#" alt="github" /> Github
-        </a>
-        <a>
+        </Link>
+        <Link>
             <img src="#" alt="twitter" /> Twitter
-        </a>
+        </Link>
     </>
 }
 
