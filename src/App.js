@@ -1,14 +1,22 @@
 import React from 'react';
-import Header from './components/Header';
-import BodyNav from './components/BodyNav';
-import Footer from './components/Footer'
-import {BrowserRouter as Router} from 'react-router-dom'
+import LandingPage from './page/LandingPage'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 function App() {
   return (
     <Router>
-      <Header />
-      <BodyNav />
-      <Footer />
+      <div className="row">
+        <div className="col-lg-6">
+          <LandingPage />
+        </div>
+        <div className="col-lg-6">
+          <Switch>
+            <Route path="/" exact render={()=><p>I am work</p>} />
+            <Route path="/work" render={()=><p>I am work</p>} />
+            <Route path="/resume" render={()=><p>I am resume</p>} />
+            <Route path="/contact" render={()=><p>I am contact</p>} />
+          </Switch>
+        </div>
+      </div>
     </Router>
   );
 }
