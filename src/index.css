@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 code {
@@ -43,4 +43,40 @@ code {
 .active{
   padding-left: 30px !important;
   color: rgb(202, 192, 192) !important;
+}
+
+.box{
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  height : auto;
+  margin:15px;
+  padding: 25px;
+  text-overflow: ellipsis;
+  /* padding:2rem; */
+  /* border : 1px solid rgb(0, 0, 0); */
+  background-color: rgb(12, 12, 12);
+}
+
+.box:hover{
+  /* margin : 15px 1px 15px 1px ; */
+  margin: 15px 9px;
+  transition: 0.25s ease-in-out;
+}
+
+/* .text-overflow-ellipsis{
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: scroll;
+} */
+
+.work-description{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.work-footer{
+  font-size : 14px;
+  color: rgb(187, 184, 184) !important;
 }

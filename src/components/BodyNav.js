@@ -20,7 +20,10 @@ const BodyNav = ({history, location, match}) => {
 
     const defaultListClassName = 'text-decoration-none nav-link'
 
-    return <nav className="text-muted" style={{margin:'85px 0px 35px 0px'}}>
+    return <nav 
+                className="text-muted" 
+                style={{marginn:'85px 0px 35px 0px'}}
+            >
         <ol start="0">
             <li className="p-2"><Link to="/work" className={`${defaultListClassName} ${isActive('work')}`}>WORK</Link></li>
             <li className="p-2"><Link to="/resume" className={`${defaultListClassName} ${isActive('resume')}`}>RESUME</Link></li>
