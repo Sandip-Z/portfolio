@@ -1,4 +1,5 @@
 import React from 'react'
+import ChasingShadow from '../hoc/chasingShadow'
 
 const Box = ({description, technology, code, live, title}) => {
     const getTechnology = () => {
@@ -11,7 +12,7 @@ const Box = ({description, technology, code, live, title}) => {
             return <small>Technology n/a</small>
         }
     }
-    return <div className="box">
+    return <div>
         <div>
             <h3 className="mb-0">{title || 'Title'}</h3>
             <p className="mt-2">
@@ -34,4 +35,4 @@ const Box = ({description, technology, code, live, title}) => {
     </div>
 }
 
-export default Box
+export default ChasingShadow(Box)

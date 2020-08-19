@@ -62,6 +62,7 @@ code {
 .box:hover{
   /* margin : 15px 1px 15px 1px ; */
   margin: 15px 9px;
+  background-image: linear-gradient('#fffff', '#ff00ff');
   transition: 0.25s ease-in-out;
 }
 
