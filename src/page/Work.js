@@ -17,6 +17,7 @@ const Work = () => {
             technology={['node', 'express', 'ejs', 'mysql', 'react', 'javascript']}
             code="https://something.com"
             live="s"
+            detail
         />
     </div>
 }
