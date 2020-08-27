@@ -82,3 +82,14 @@ code {
   color: rgb(187, 184, 184) !important;
   margin-top: auto !important;
 }
+
+.experience-list {
+  /* background-color: red; */
+  margin-left: -20px;
+}
+
+.experience-list li {
+  margin-top: 15px;
+  list-style-type: lower-greek;
+  line-height: 1.5em;
+}

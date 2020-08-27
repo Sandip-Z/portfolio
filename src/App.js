@@ -1,7 +1,8 @@
-import React from 'react';
-import LandingPage from './page/LandingPage'
-import Work from './page/Work'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import React from "react";
+import LandingPage from "./page/LandingPage";
+import Work from "./page/Work";
+import Resume from "./page/Resume";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
@@ -13,8 +14,8 @@ function App() {
           <Switch>
             <Route path="/" exact component={Work} />
             <Route path="/work" component={Work} />
-            <Route path="/resume" render={()=><p>I am resume</p>} />
-            <Route path="/contact" render={()=><p>I am contact</p>} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/contact" render={() => <p>I am contact</p>} />
           </Switch>
         </div>
       </div>
