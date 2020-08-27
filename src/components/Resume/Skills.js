@@ -11,13 +11,13 @@ const Skills = () => {
           <p className="font-weight-lighter">Bootstrap, Materialize CSS</p>
         </div>
         <div className="col-lg-6 text-light">
-          <p className="font-weight-lighter">
-            Javascript,{" "}
+          <p>
+            <span className="font-weight-lighter">Javascript, </span>
             <span className="font-weight-bolder text-primary">React js</span>
           </p>
           <p className="font-weight-bolder text-primary">Node JS, Express </p>
-          <p className="font-weight-lighter">
-            MYSQL,{" "}
+          <p>
+            <span className="font-weight-lighter">MYSQL, </span>
             <span className="font-weight-bolder text-primary">MongoDB</span>
           </p>
         </div>
