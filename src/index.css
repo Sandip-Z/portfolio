@@ -106,3 +106,8 @@ code {
   list-style-type: lower-greek;
   line-height: 1.5em;
 }
+
+.profile-image {
+  width: 25%;
+  border-radius: 75px;
+}

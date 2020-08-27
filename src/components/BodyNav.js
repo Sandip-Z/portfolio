@@ -27,7 +27,7 @@ const BodyNav = ({ history, location, match }) => {
             to="/work"
             className={`${defaultListClassName} ${isActive("work")}`}
           >
-            WORK
+            PROJECTS
           </Link>
         </li>
         <li className="p-2">
