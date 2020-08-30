@@ -7,7 +7,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 function App() {
   return (
     <ErrorBoundary>
-      <Router>
+      <Router basename="portfolio">
         <div className="row">
           <div className="col-lg-6 w-100vh">
             <LandingPage />
