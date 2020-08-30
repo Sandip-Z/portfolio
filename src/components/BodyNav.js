@@ -21,7 +21,7 @@ const BodyNav = ({ history, location, match }) => {
 
   return (
     <nav className="text-muted" style={{ marginn: "85px 0px 35px 0px" }}>
-      <ol start="0">
+      <ol start="1">
         <li className="p-2">
           <Link
             to="/work"
