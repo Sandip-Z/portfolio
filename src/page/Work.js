@@ -1,25 +1,21 @@
 import React from "react";
 import Box from "../components/Box";
+import { works } from "../content/works";
 const Work = () => {
-  return (
-    <div className="text-white d-flex flex-wrap mt-5">
+  const renderBoxes = works.map((work) => {
+    return (
       <Box
-        technology={["React", "HTML", "CSS"]}
-        title="Portfolio"
-        description="My portfolio website."
-        code="https://github.com/Sandip-Z/portfolio"
-        live="http://www.sandipsatyal.com.np"
+        key={work.id}
+        title={work.title}
+        description={work.description}
+        technology={work.technology}
+        code={work.code}
+        live={work.live}
+        detail={work.detail}
       />
-      <Box
-        description="Helps check your website's accessibility, broken links etc"
-        title="Site Auditor"
-        technology={["Node", "Express", "React", "MYSQL"]}
-        code="https://something.com"
-        live="s"
-        detail="/work/dummy"
-      />
-    </div>
-  );
+    );
+  });
+  return <div className="text-white d-flex flex-wrap mt-5">{renderBoxes}</div>;
 };
 
 export default Work;

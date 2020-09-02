@@ -7,7 +7,7 @@ const Box = ({ description, technology, code, live, title, detail }) => {
     if (technology && technology.length) {
       const kbdRendered = technology.map((tech) => {
         return (
-          <small key={tech} className="mx-1 font-weight-lighter">
+          <small key={tech} className="mr-2 font-weight-lighter">
             {tech}
           </small>
         );
@@ -20,7 +20,7 @@ const Box = ({ description, technology, code, live, title, detail }) => {
   return (
     <div className="d-flex flex-column">
       <div>
-        <h3 className="mb-0">{title || "Title"}</h3>
+        <h5 className="mb-0 text-capitalize">{title || "Title"}</h5>
         <p className="mt-2">{getTechnology()}</p>
         <p className="text-overflow-ellipsis h-100 work-description">
           {description || "Description n/a"}
@@ -58,7 +58,7 @@ const Box = ({ description, technology, code, live, title, detail }) => {
                 to={detail}
                 className="text-decoration-none mr-2 work-footer"
               >
-                <i class="fa fa-info" aria-hidden="true"></i>
+                <i className="fa fa-info" aria-hidden="true"></i>
               </Link>
             </div>
           )}

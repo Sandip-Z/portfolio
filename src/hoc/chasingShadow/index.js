@@ -13,10 +13,6 @@ function chasingShadow(Component) {
       setStyle(style);
     }, [deg]);
 
-    const handleMouseEnter = (e) => {
-      console.log("mouse entered");
-    };
-
     const handleMouseMove = (event) => {
       const X = event.clientX / 5;
       const Y = event.clientY / 5;
@@ -33,7 +29,6 @@ function chasingShadow(Component) {
     return (
       <div
         className={`${defaultClassName}`}
-        onMouseEnter={handleMouseEnter}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ ...style }}
