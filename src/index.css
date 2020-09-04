@@ -144,3 +144,18 @@ code {
   );
   background-position: center;
 }
+
+form section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+input,
+textarea {
+  padding-left: 10px;
+  padding-top: 5px;
+  border: 0;
+  background-color: rgb(7, 7, 7);
+  color: rgb(245, 245, 245);
+}
