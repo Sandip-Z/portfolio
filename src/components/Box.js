@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import ChasingShadow from "../hoc/chasingShadow";
 
-const Box = ({ description, technology, code, live, title, detail }) => {
+const Box = ({ description, technology, code, live, title, detail, id }) => {
+  const history = useHistory();
   const getTechnology = () => {
     if (technology && technology.length) {
       const kbdRendered = technology.map((tech) => {
@@ -17,8 +18,12 @@ const Box = ({ description, technology, code, live, title, detail }) => {
       return <small>Technology n/a</small>;
     }
   };
+
+  const navigateToDetail = () => {
+    history.push(`/project/detail/${id}`);
+  };
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column" onClick={navigateToDetail}>
       <div>
         <h5 className="mb-0 text-capitalize">{title || "Title"}</h5>
         <p className="mt-2">{getTechnology()}</p>
@@ -55,7 +60,7 @@ const Box = ({ description, technology, code, live, title, detail }) => {
           {detail && (
             <div className="ml-auto" title="Detail">
               <Link
-                to={detail}
+                to={`/project/detail/${id}`}
                 className="text-decoration-none mr-2 work-footer"
               >
                 <i className="fa fa-info" aria-hidden="true"></i>

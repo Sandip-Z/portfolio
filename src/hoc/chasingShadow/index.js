@@ -21,7 +21,7 @@ function chasingShadow(Component) {
     };
 
     const handleMouseLeave = (e) => {
-      console.log("mouse left");
+      // console.log("mouse left");
       // style={}
       setStyle({});
     };

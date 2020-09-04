@@ -5,6 +5,7 @@ const Work = () => {
   const renderBoxes = works.map((work) => {
     return (
       <Box
+        id={work.id}
         key={work.id}
         title={work.title}
         description={work.description}

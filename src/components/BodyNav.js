@@ -11,7 +11,7 @@ const BodyNav = ({ history, location, match }) => {
   const isActive = (name) => {
     if (`/${name}` === activeLink) {
       return "text-warning font-weight-bold";
-    } else if (name === "work" && activeLink === "/") {
+    } else if (name === "project" && activeLink === "/") {
       return "active";
     }
     return "text-muted";
@@ -24,8 +24,8 @@ const BodyNav = ({ history, location, match }) => {
       <ol start="1">
         <li className="p-2">
           <Link
-            to="/work"
-            className={`${defaultListClassName} ${isActive("work")}`}
+            to="/project"
+            className={`${defaultListClassName} ${isActive("project")}`}
           >
             PROJECTS
           </Link>

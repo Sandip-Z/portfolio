@@ -15,7 +15,7 @@ function App() {
           <div className="col-lg-6">
             <Switch>
               <Route path="/" exact component={Work} />
-              <Route path="/work" component={Work} />
+              <Route path="/project" component={Work} />
               <Route path="/resume" component={Resume} />
               <Route path="/contact" render={() => <p>I am contact</p>} />
             </Switch>
