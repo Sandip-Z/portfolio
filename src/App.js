@@ -2,6 +2,7 @@ import React from "react";
 import LandingPage from "./page/LandingPage";
 import Work from "./page/Work";
 import Resume from "./page/Resume";
+import Contact from "./page/Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary";
 function App() {
@@ -17,7 +18,7 @@ function App() {
               <Route path="/" exact component={Work} />
               <Route path="/project" component={Work} />
               <Route path="/resume" component={Resume} />
-              <Route path="/contact" render={() => <p>I am contact</p>} />
+              <Route path="/contact" component={Contact} />
             </Switch>
           </div>
         </div>
