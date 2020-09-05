@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { withRouter, Link } from "react-router-dom";
 
-const BodyNav = ({ history, location, match }) => {
+const BodyNav = ({ location }) => {
   const [activeLink, setActiveLink] = useState("/");
-
   useEffect(() => {
     setActiveLink(location.pathname);
   }, [location.pathname]);
 
+  const defaultListClassName = "text-decoration-none nav-link";
+  const activeListClassName = "text-warning font-weight-bold";
+
   const isActive = (name) => {
-    if (`/${name}` === activeLink) {
-      return "text-warning font-weight-bold";
+    console.log(activeLink);
+    if (`/${name}` === activeLink || activeLink.split("/")[1] === `${name}`) {
+      return activeListClassName;
     } else if (name === "project" && activeLink === "/") {
-      return "active";
+      return activeListClassName;
     }
     return "text-muted";
   };
-
-  const defaultListClassName = "text-decoration-none nav-link";
 
   return (
     <nav className="text-muted" style={{ marginn: "85px 0px 35px 0px" }}>
