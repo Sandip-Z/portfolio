@@ -11,7 +11,7 @@ const BodyNav = ({ location }) => {
   const activeListClassName = "text-warning font-weight-bold";
 
   const isActive = (name) => {
-    console.log(activeLink);
+    // console.log(activeLink);
     if (`/${name}` === activeLink || activeLink.split("/")[1] === `${name}`) {
       return activeListClassName;
     } else if (name === "project" && activeLink === "/") {
