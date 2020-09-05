@@ -27,7 +27,7 @@ const Box = ({ description, technology, code, live, title, detail, id }) => {
       <div>
         <h5 className="mb-0 text-capitalize">{title || "Title"}</h5>
         <p className="mt-2">{getTechnology()}</p>
-        <p className="text-overflow-ellipsis h-100 work-description">
+        <p className="text-overflow-ellipsis work-description">
           {description || "Description n/a"}
         </p>
       </div>

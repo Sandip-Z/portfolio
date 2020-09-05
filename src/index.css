@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+.tablet-nav {
+  display: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -57,6 +61,7 @@ code {
 .box {
   transition: 0.35s ease;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 295px;
   height: auto;
@@ -159,4 +164,59 @@ textarea {
   border: 0;
   background-color: rgb(7, 7, 7);
   color: rgb(245, 245, 245);
+}
+
+.foot-navigation {
+  display: none;
+}
+
+.logo {
+  font-size: 30px;
+  padding: 41px 0px 0px 45px;
+}
+
+.menu {
+  padding: 41px 45px 0 0;
+  font-size: 30px;
+}
+
+.foot-navigation {
+  display: none;
+  /* justify-content: space-around; */
+  margin: 35px auto;
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 992px) {
+  .tablet-nav {
+    display: block;
+    /* position: fixed; */
+    /* width: 100%; */
+    /* z-index: 2; */
+    /* background-color: rgb(10, 10, 10); */
+  }
+  .box-lg {
+    margin: 0 5%;
+  }
+
+  .foot-navigation {
+    display: block;
+  }
+  .visiting-card {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-left: 0;
+    margin: 0 auto !important;
+  }
+  .landing-page {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .visiting-card {
+    width: 90% !important;
+    margin: auto;
+  }
 }

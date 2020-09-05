@@ -7,12 +7,12 @@ const Skills = () => {
         For Development
       </h5>
       <div className="row mb-3">
-        <div className="col-lg-6 text-light text-center">
+        <div className="col-6 text-light text-center">
           <p className="font-weight-lighter">HTML5, CSS3</p>
           <p className="font-weight-lighter">SASS, LESS</p>
           <p className="font-weight-lighter">Bootstrap, Materialize CSS</p>
         </div>
-        <div className="col-lg-6 text-light text-center">
+        <div className="col-6 text-light text-center">
           <p>
             <span className="font-weight-lighter">Javascript, </span>
             <span className="font-weight-bolder text-warning">React JS</span>

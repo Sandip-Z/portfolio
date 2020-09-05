@@ -3,8 +3,8 @@ import React from "react";
 const VistingCard = () => {
   return (
     <div className="visiting-card row">
-      <div className="col-lg-6 visiting-card-logo"></div>
-      <div className="col-lg-6 d-flex align-items-center">
+      <div className="col-6 visiting-card-logo"></div>
+      <div className="col-6 d-flex align-items-center">
         <div className="d-flex flex-column">
           <h1 className="mb-0 text-warning">Sandip Satyal</h1>
           <h6 className="mb-4">Software Engineer</h6>
