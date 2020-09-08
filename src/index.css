@@ -304,6 +304,9 @@ textarea {
   .landing-page {
     display: none;
   }
+  .page {
+    margin-top: 125px;
+  }
 }
 
 @media only screen and (max-width: 736px) {

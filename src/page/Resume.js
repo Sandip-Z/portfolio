@@ -7,7 +7,7 @@ import Profile from "../components/Resume/Profile";
 
 const ResumePage = () => {
   return (
-    <div className="mt-5 p-3 pt-5 box-lg">
+    <div className="p-3 pt-5 box-lg page">
       <ResumeTitle title="SANDIP SATYAL" />
       <Profile />
       <ResumeTitle title="SKILLS" />

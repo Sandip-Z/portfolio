@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="container" style={{ position: "fixed", width: "50%" }}>
+    <div className="container page" style={{ position: "fixed", width: "50%" }}>
       <div className="flex flex-column">
         <div>
           <Header />

@@ -17,7 +17,7 @@ const Work = () => {
     );
   });
   return (
-    <div className="text-white d-flex flex-wrap justify-content-center mt-5">
+    <div className="d-flex flex-wrap justify-content-center text-white page">
       {renderBoxes}
     </div>
   );
