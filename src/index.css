@@ -128,7 +128,7 @@ code {
   /* margin: inherit 50px !important; */
   margin-right: 50px !important;
   background-color: rgb(12, 12, 12);
-  box-shadow: 2px 1px 15px rgb(8, 8, 8);
+  box-shadow: 0px 3px 15px rgba(34, 32, 32, 0.2);
 }
 
 .visiting-card-logo {
@@ -228,7 +228,8 @@ textarea {
     top: 1rem;
     right: 2rem;
     border-radius: 50%;
-    box-shadow: 1px 1rem 1rem rgba(82, 82, 83, 0.295);
+    /* box-shadow: 1px 1rem 1rem rgba(82, 82, 83, 0.295); */
+    box-shadow: 0px 3px 15px rgba(34, 32, 32, 0.2);
   }
 
   .tNav__list {
@@ -270,7 +271,8 @@ textarea {
     color: whitesmoke !important;
     transform: translateY(-2px);
     transition: all 0.2s;
-    box-shadow: 1px 1px 1rem rgb(10, 10, 10);
+    /* box-shadow: 1px 1px 1rem rgb(10, 10, 10); */
+    box-shadow: 0px 3px 15px rgba(34, 32, 32, 0.2);
   }
 
   .box-lg {
@@ -292,7 +294,8 @@ textarea {
   .foot-navigation button:hover {
     background-color: rgb(253, 219, 0);
     transform: translateY(-2px);
-    box-shadow: 0px 1.3px 5px rgb(85, 85, 85);
+    /* box-shadow: 0px 1.3px 5px rgb(85, 85, 85); */
+    box-shadow: 0px 3px 15px rgba(73, 69, 69, 0.2);
   }
   .visiting-card {
     display: flex;
@@ -313,5 +316,9 @@ textarea {
   .visiting-card {
     width: 90% !important;
     margin: auto;
+  }
+
+  .box-lg {
+    width: 90%;
   }
 }
