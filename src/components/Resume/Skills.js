@@ -27,14 +27,14 @@ const Skills = () => {
       <h5 className="d-none text-light mb-4 font-weight-bold">
         For Version Control
       </h5>
-      <div className="d-flex justify-content-between pr-3 text-light font-weight-lighter mb-5">
+      <div className="d-flex flex-wrap justify-content-between pr-3 text-light font-weight-lighter mb-5 skills__footer">
         <p>Git</p>
-        <p className="ml-3">Github</p>
-        <p className="ml-3">Heruko</p>
-        <p className="ml-3">AWS</p>
-        <p className="ml-3">CI/CD</p>
-        <p className="ml-3">Docker</p>
-        <p className="ml-3">Webpack</p>
+        <p>Github</p>
+        <p>Heruko</p>
+        <p>AWS</p>
+        <p>CI/CD</p>
+        <p>Docker</p>
+        <p>Webpack</p>
       </div>
     </div>
   );

@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Do-Hyeon";
-  src: url("./asset/DoHyeon-Regular.ttf");
-  src: url("./asset/DoHyeon-Regular.ttf") format("woff"),
-    url("./asset/DoHyeon-Regular.ttf") format("opentype"),
-    url("./asset/DoHyeon-Regular.ttf") format("svg");
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -24,6 +16,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.skills__footer p {
+  margin-left: 2rem;
 }
 
 .bg-dark2 {
