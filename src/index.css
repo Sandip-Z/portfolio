@@ -109,9 +109,12 @@ code {
 }
 
 .experience-list li {
-  margin-top: 15px;
   list-style-type: none;
   line-height: 1.5em;
+}
+
+.experience-list li:not(:first-child) {
+  margin-top: 35px;
 }
 
 .profile-image {
