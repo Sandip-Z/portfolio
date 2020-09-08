@@ -24,6 +24,7 @@ const FootNavigation = () => {
 
   const handleNavigation = (pathname) => {
     history.push(`/${pathname}`);
+    window.scrollTo(0, 0);
   };
   return (
     <div className="foot-navigation">
