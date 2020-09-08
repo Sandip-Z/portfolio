@@ -16,7 +16,11 @@ const Work = () => {
       />
     );
   });
-  return <div className="text-white d-flex flex-wrap mt-5">{renderBoxes}</div>;
+  return (
+    <div className="text-white d-flex flex-wrap justify-content-center mt-5">
+      {renderBoxes}
+    </div>
+  );
 };
 
 export default Work;
