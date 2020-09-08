@@ -78,6 +78,12 @@ code {
   /* margin: 15px 9px; */
   background-image: linear-gradient("#fffff", "#ff00ff");
   transition: 0.25s ease-in-out;
+  transform: scale(1.05);
+}
+
+.box:hover .box__info i,
+.box:hover .box__info a {
+  color: black !important;
 }
 
 .box-lg {

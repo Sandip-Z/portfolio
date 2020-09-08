@@ -32,7 +32,7 @@ const Box = ({ description, technology, code, live, title, detail, id }) => {
         </p>
       </div>
       <div className="font-weight-light work-footer mt-auto">
-        <div className="d-flex justify-content-start">
+        <div className="d-flex justify-content-start box__info">
           {live && (
             <div title="Live">
               <i className="fa fa-eye" aria-hidden="true"></i>
