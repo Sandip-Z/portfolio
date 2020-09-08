@@ -18,7 +18,7 @@ const FootNavigation = () => {
         setNav(["resume", "home"]);
         return;
       default:
-        setNav(["home", "resume"]);
+        setNav(["contact", "project"]);
     }
   }, [location.pathname]);
 
