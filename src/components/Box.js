@@ -23,7 +23,10 @@ const Box = ({ description, technology, code, live, title, detail, id }) => {
     history.push(`/project/detail/${id}`);
   };
   return (
-    <div className="d-flex flex-column" onClick={navigateToDetail}>
+    <div
+      className="d-flex flex-column cursor-pointer"
+      onClick={navigateToDetail}
+    >
       <div>
         <h5 className="mb-0 text-capitalize">{title || "Title"}</h5>
         <p className="mt-2">{getTechnology()}</p>
