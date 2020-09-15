@@ -237,6 +237,7 @@ textarea:focus {
 
   .tNav__checkbox {
     display: none;
+    transition: all 0.5s;
   }
 
   .tNav__checkbox:checked ~ .tNav__background {
@@ -275,6 +276,7 @@ textarea:focus {
   .tNav__checkbox:checked ~ .tNav__nav {
     opacity: 1;
     width: 100%;
+    transition: all 0.5s;
   }
 
   .tNav__item {
