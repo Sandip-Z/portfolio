@@ -43,6 +43,7 @@ const Box = ({ description, technology, code, live, title, detail, id }) => {
                 href={live}
                 className="text-decoration-none ml-1 work-footer"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
               </a>
@@ -55,6 +56,7 @@ const Box = ({ description, technology, code, live, title, detail, id }) => {
                 href={code}
                 className="text-decoration-none ml-1 work-footer"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Code
               </a>
