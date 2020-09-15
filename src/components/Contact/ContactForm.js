@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import useForm from "../../hooks/useForm";
 
 const ContactForm = () => {
-  const [values, setValues, clearValues] = useForm({
+  const [values, setValues] = useForm({
     name: "",
     email: "",
     message: "",
