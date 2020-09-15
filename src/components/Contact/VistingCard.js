@@ -3,12 +3,14 @@ import React from "react";
 const VistingCard = () => {
   return (
     <div className="visiting-card row">
-      <div className="col-6 visiting-card-logo"></div>
-      <div className="col-6 d-flex align-items-center">
+      <div className="col-6c col-sm-4 visiting-card-logo"></div>
+      <div className="col-6c col-sm-8 d-flex align-items-center">
         <div className="d-flex flex-column">
           <h1 className="mb-0 text-warning">Sandip Satyal</h1>
           <h6 className="mb-4">Software Engineer</h6>
-          <p className="my-0 font-weight-light">sandipsatyal25@gmail.com</p>
+          <p className="my-0 font-weight-light visting-card-email">
+            sandipsatyal25@gmail.com
+          </p>
           <p className="my-0 font-weight-light">sandipsatyal.com.np</p>
           <div className="d-flex mt-4">
             <a

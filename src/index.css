@@ -171,6 +171,12 @@ form section {
   margin-bottom: 25px;
 }
 
+.vistin-card-email {
+  display: flex;
+  white-space: initial;
+  word-wrap: break-word;
+}
+
 input,
 textarea {
   padding-left: 10px;
@@ -179,6 +185,12 @@ textarea {
   border: 0;
   background-color: rgb(7, 7, 7);
   color: rgb(245, 245, 245);
+  border: 1px solid rgba(115, 115, 115, 0.4);
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid rgba(210, 210, 210, 0.9);
 }
 
 .foot-navigation {
@@ -313,10 +325,11 @@ textarea {
   .visiting-card {
     display: flex;
     justify-content: center;
-    width: 75%;
+    max-width: 75%;
     margin-left: 0;
     margin: 0 auto !important;
   }
+
   .landing-page {
     display: none;
   }
@@ -333,5 +346,23 @@ textarea {
 
   .box-lg {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .visiting-card-logo {
+    /* max-width: 100% !important; */
+    /* clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 43%,
+      100% 100%,
+      68% 99%,
+      33% 99%,
+      0 100%,
+      0% 43%,
+      0 0
+    ) !important; */
+    clip-path: none;
   }
 }
