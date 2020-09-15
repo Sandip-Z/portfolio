@@ -18,7 +18,11 @@ const Profile = () => {
         </a>
       </div> */}
       <div className="d-flex justify-content-center">
-        <img src={profileImage} className="img img-responsive profile-image" />
+        <img
+          src={profileImage}
+          className="img img-responsive profile-image"
+          alt="Sandip Satyal"
+        />
       </div>
       <p className="mt-3 font-weight-lighter">
         Software Engineer from Kathmandu, Nepal. I love learning new things
