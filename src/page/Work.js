@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "../components/Box";
 import { works } from "../content/works";
+import ProjectFilter from "../components/ProjectFilter";
 const Work = () => {
   const renderBoxes = works.map((work) => {
     return (
@@ -17,8 +18,11 @@ const Work = () => {
     );
   });
   return (
-    <div className="d-flex flex-wrap justify-content-center text-white page">
-      {renderBoxes}
+    <div className="page">
+      <ProjectFilter />
+      <div className="d-flex flex-wrap justify-content-center text-white">
+        {renderBoxes}
+      </div>
     </div>
   );
 };
