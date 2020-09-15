@@ -18,6 +18,7 @@ const VistingCard = () => {
               target="_blank"
               className="text-light"
               title="linkedin"
+              rel="noopener noreferrer"
             >
               <i className="fa fa-linkedin pr-4"></i>
             </a>
@@ -25,10 +26,16 @@ const VistingCard = () => {
               href="https://github.com/Sandip-Z"
               target="_blank"
               className="text-light"
+              rel="noopener noreferrer"
             >
               <i className="fa fa-github pr-4" title="github"></i>
             </a>
-            <a href="#" target="_blank" className="text-light">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light"
+            >
               <i className="fa fa-medium pr-4" title="medium"></i>
             </a>
           </div>
