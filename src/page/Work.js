@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "../components/Box";
 import { works } from "../content/works";
-// import ProjectFilter from "../components/ProjectFilter";
+import ProjectFilter from "../components/ProjectFilter";
 const Work = () => {
   const renderBoxes = works.map((work) => {
     return (
@@ -19,7 +19,7 @@ const Work = () => {
   });
   return (
     <div className="page">
-      {/* <ProjectFilter /> */}
+      <ProjectFilter />
       <div className="d-flex flex-wrap justify-content-center text-white">
         {renderBoxes}
       </div>

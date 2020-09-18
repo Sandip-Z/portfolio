@@ -9,13 +9,26 @@ workCopy.forEach((work) => {
 
 const ProjectFilter = () => {
   const [techUsed] = useState(Array.from(new Set(tech)));
-  const [frequentlyUsedTech] = useState(["HTML5", "CSS3", "REACT", "SASS"]);
+  const [frequentlyUsedTech] = useState([
+    "HTML5",
+    "CSS3",
+    "REACT",
+    "SASS",
+    "NODE",
+    "MONGODB",
+  ]);
+  const [activeUsedTech, setActiveUsedTech] = useState([
+    "HTML5",
+    "CSS3",
+    "SASS",
+  ]);
   const myMemo = useMemo(() => {
     return techUsed;
   }, [techUsed]);
   const renderTech = frequentlyUsedTech.map((tech) => {
     return (
       <p
+        key={tech}
         className={`p-2 my-auto mx-1 ${
           tech === "HTML5" || tech === "CSS3" || tech === "SASS"
             ? "bg-warning text-dark"
@@ -26,10 +39,19 @@ const ProjectFilter = () => {
       </p>
     );
   });
+
+  const handleShowMore = () => {
+    console.log("handle show more");
+  };
   return (
     <div className="d-flex justify-content-center align-items-center text-dark mb-3">
       {renderTech}
-      <p className="bg-dark text-light p-2 my-auto mx-1">&#9660;</p>
+      <p
+        className="bg-dark text-light p-2 my-auto mx-1"
+        onClick={handleShowMore}
+      >
+        &#9660;
+      </p>
     </div>
   );
 };
