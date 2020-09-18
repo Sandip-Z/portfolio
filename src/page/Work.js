@@ -19,7 +19,7 @@ const Work = () => {
   });
   return (
     <div className="page">
-      <ProjectFilter />
+      {/* <ProjectFilter /> */}
       <div className="d-flex flex-wrap justify-content-center text-white">
         {renderBoxes}
       </div>
