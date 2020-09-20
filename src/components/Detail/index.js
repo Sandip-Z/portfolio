@@ -33,9 +33,9 @@ const Detail = () => {
       <div className="text-light mb-5">
         <Link to="/project">back to all projects</Link>
       </div>
-      <div>
+      <div className="text-light">
         <h1>{project.title}</h1>
-        <h5>{project.description}</h5>
+        <p>{project.description}</p>
         <>{renderTechUsed}</>
         <div>
           {renderImages.length ? renderImages : <p>No Images Found.</p>}
