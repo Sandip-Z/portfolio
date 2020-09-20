@@ -26,6 +26,7 @@ export const works = [
     // code: "https://github.com/Sandip-Z/portfolio",
     // live: "http://www.sandipsatyal.com.np",
     detail: true,
+    images: ["gv_login.png", "gv_dashboard.png", "gv_page.png", "gv_form.png"],
   },
   {
     id: 3,

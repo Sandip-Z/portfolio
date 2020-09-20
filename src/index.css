@@ -214,6 +214,17 @@ textarea:focus {
   /* border: 1px solid red; */
 }
 
+.project-image {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.project-image:hover {
+  transform: scale(2);
+}
+
 @media only screen and (max-width: 992px) {
   .tNav {
     display: block;

@@ -20,8 +20,8 @@ const Box = ({ description, technology, code, live, title, detail, id }) => {
   };
 
   const navigateToDetail = () => {
-    // history.push(`/project/detail/${id}`);
-    console.log("navigation disabled");
+    history.push(`/project/detail/${id}`);
+    // console.log("navigation disabled");
   };
   return (
     <div
