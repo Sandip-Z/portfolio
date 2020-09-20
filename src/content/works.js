@@ -36,6 +36,7 @@ export const works = [
     code: "https://github.com/Sandip-Z/notebook.io_landing_page",
     live: "s",
     detail: true,
+    images: ["nb_land.png", "nb_login.png", "nb_register.png"],
   },
   // {
   //   id: 6,
