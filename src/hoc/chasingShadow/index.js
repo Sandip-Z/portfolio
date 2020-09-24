@@ -57,6 +57,14 @@ function chasingShadow(Component) {
         variants={container}
         initial="hidden"
         animate="visible"
+        whileHover={{
+          scale: 1.15,
+          borderRadius: 7,
+        }}
+        whileTap={{
+          msTransformOrigin: "center",
+          scale: 2,
+        }}
       >
         <Component {...props} />
       </motion.div>

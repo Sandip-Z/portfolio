@@ -35,7 +35,7 @@ code {
   top: 50%;
   background-color: white;
   /* height: 100px; */
-  transform: scaleY(7);
+  transform: translateY(-50%) scaleY(7);
 }
 
 .scroll {
@@ -82,13 +82,13 @@ code {
   cursor: pointer;
 }
 
-.box:hover {
-  /* margin : 15px 1px 15px 1px ; */
-  /* margin: 15px 9px; */
+/* .box:hover {
+  margin : 15px 1px 15px 1px ;
+  margin: 15px 9px;
   background-image: linear-gradient("#fffff", "#ff00ff");
   transition: 0.25s ease-in-out;
   transform: scale(1.05) !important;
-}
+} */
 
 .box:hover .box__info i,
 .box:hover .box__info a {
