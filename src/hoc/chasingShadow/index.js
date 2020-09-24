@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 function chasingShadow(Component) {
   return ({ ...props }) => {
@@ -12,6 +13,27 @@ function chasingShadow(Component) {
       };
       setStyle(style);
     }, [deg]);
+
+    const container = {
+      hidden: { opacity: 0, scale: 0 },
+      visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          // delay: 0.3,
+          when: "beforeChildren",
+          staggerChildren: 0.1,
+        },
+      },
+    };
+
+    const item = {
+      hidden: { y: 20, opacity: 0 },
+      visible: {
+        y: 0,
+        opacity: 1,
+      },
+    };
 
     const handleMouseMove = (event) => {
       const X = event.clientX / 5;
@@ -27,14 +49,17 @@ function chasingShadow(Component) {
     };
 
     return (
-      <div
+      <motion.div
         className={`${defaultClassName}`}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ ...style }}
+        variants={container}
+        initial="hidden"
+        animate="visible"
       >
         <Component {...props} />
-      </div>
+      </motion.div>
     );
   };
 }
