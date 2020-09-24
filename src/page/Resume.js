@@ -18,7 +18,8 @@ const ResumePage = () => {
         height: "auto",
       }}
       transition={{
-        duration: 0.7,
+        duration: 0.3,
+        type: "tween",
       }}
     >
       <ResumeTitle title="SANDIP SATYAL" />

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ResumeTitle = ({ title, icon }) => {
   return (
@@ -8,7 +9,15 @@ const ResumeTitle = ({ title, icon }) => {
         className="text-dark text-center text-uppercase"
         style={{ letterSpacing: 7, marginTop: "-13px" }}
       >
-        <span style={{ background: "white", padding: "0px 5px" }}>{title}</span>
+        <motion.span
+          initial={{ background: "black", padding: "0px 5px" }}
+          animate={{
+            background: "white",
+            padding: "0px 5px",
+          }}
+        >
+          {title}
+        </motion.span>
       </h5>
     </>
   );
