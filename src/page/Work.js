@@ -1,7 +1,8 @@
 import React from "react";
 import Box from "../components/Box";
 import { works } from "../content/works";
-import ProjectFilter from "../components/ProjectFilter";
+// import ProjectFilter from "../components/ProjectFilter";
+import ScrollPosition from "../components/ScrollPosition";
 const Work = () => {
   const renderBoxes = works.map((work) => {
     return (
@@ -18,8 +19,9 @@ const Work = () => {
     );
   });
   return (
-    <div className="page">
+    <div className="d-flex page">
       {/* <ProjectFilter /> */}
+      <ScrollPosition />
       <div className="d-flex flex-wrap justify-content-center text-white">
         {renderBoxes}
       </div>

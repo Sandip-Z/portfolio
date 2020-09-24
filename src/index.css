@@ -30,6 +30,18 @@ code {
   color: #777778 !important;
 }
 
+.scroll-line-container {
+  position: fixed;
+  top: 50%;
+  background-color: white;
+  /* height: 100px; */
+  transform: scaleY(7);
+}
+
+.scroll {
+  background-color: goldenrod;
+}
+
 .container {
   margin: 70px !important;
 }
@@ -61,7 +73,7 @@ code {
   flex-direction: column;
   width: 295px;
   height: auto;
-  margin: 15px;
+  margin: 9px;
   padding: 25px;
   text-overflow: ellipsis;
   /* padding:2rem; */
