@@ -9,6 +9,16 @@ export const works = [
     detail: true,
   },
   {
+    id: 5,
+    title: "My Movies",
+    description:
+      "Create a watch, watching and watched list for favorite movies and share it with your friends.",
+    technology: ["MongoDB", "Express.js", "React.js", "Node"],
+    code: "https://github.com/Sandip-Z/notebook.io_landing_page",
+    live: "s",
+    detail: true,
+  },
+  {
     id: 4,
     title: "Presak Distribution",
     description:
@@ -45,16 +55,6 @@ export const works = [
     technology: ["HTML5", "CSS3", "SASS", "Javascript"],
     code: "",
     live: "",
-    detail: true,
-  },
-  {
-    id: 5,
-    title: "Resource.io",
-    description:
-      "Helps users keep track of their study materials topic or subject wise",
-    technology: ["MongoDB", "Express.js", "React.js", "Node"],
-    code: "https://github.com/Sandip-Z/notebook.io_landing_page",
-    live: "s",
     detail: true,
   },
   // {
