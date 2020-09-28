@@ -36,8 +36,8 @@ function chasingShadow(Component) {
     };
 
     const handleMouseMove = (event) => {
-      const X = event.clientX / 5;
       const Y = event.clientY / 5;
+      const X = event.clientX / 2;
       const result = X + Y;
       setDeg(result);
     };
@@ -58,7 +58,7 @@ function chasingShadow(Component) {
         initial="hidden"
         animate="visible"
         whileHover={{
-          scale: 1.15,
+          scale: 1.07,
           borderRadius: 7,
         }}
         whileTap={{
