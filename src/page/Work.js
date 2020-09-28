@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "../components/Box";
 import { works } from "../content/works";
-// import ProjectFilter from "../components/ProjectFilter";
+import ProjectFilter from "../components/ProjectFilter";
 import ScrollPosition from "../components/ScrollPosition";
 const Work = () => {
   const renderBoxes = works.map((work) => {
@@ -15,12 +15,13 @@ const Work = () => {
         code={work.code}
         live={work.live}
         detail={work.detail}
+        highlight={work.id % 2 ? true : false}
       />
     );
   });
   return (
-    <div className="d-flex page">
-      {/* <ProjectFilter /> */}
+    <div className="d-flex flex-column page">
+      <ProjectFilter />
       <ScrollPosition />
       <div className="d-flex flex-wrap justify-content-center text-white">
         {renderBoxes}

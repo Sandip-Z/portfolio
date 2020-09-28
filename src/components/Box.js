@@ -2,7 +2,16 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import ChasingShadow from "../hoc/chasingShadow";
 
-const Box = ({ description, technology, code, live, title, detail, id }) => {
+const Box = ({
+  description,
+  technology,
+  code,
+  live,
+  title,
+  detail,
+  id,
+  highlight,
+}) => {
   const history = useHistory();
   const getTechnology = () => {
     if (technology && technology.length) {
@@ -20,13 +29,17 @@ const Box = ({ description, technology, code, live, title, detail, id }) => {
   };
 
   const navigateToDetail = () => {
-    history.push(`/project/detail/${id}`);
+    if (highlight) {
+      history.push(`/project/detail/${id}`);
+    }
+    return;
     // console.log("navigation disabled");
   };
   return (
     <div
       className="d-flex flex-column cursor-pointer"
       onClick={navigateToDetail}
+      style={highlight ? { opacity: 1 } : { opacity: 0.2 }}
     >
       <div>
         <h5 className="mb-0 text-capitalize">{title || "Title"}</h5>
