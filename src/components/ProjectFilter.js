@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { works } from "../content/works";
+import DisplayAllTechnologyUsed from "../components/Project/DisplayAllTechnologyUsed";
 
 const workCopy = [...works];
 let tech = [];
@@ -9,19 +10,15 @@ workCopy.forEach((work) => {
 
 const ProjectFilter = () => {
   const [techUsed] = useState(Array.from(new Set(tech)));
+  const [toggleShowMoreTechnology, setToggleShowMoreTechnology] = useState(
+    false
+  );
   const [frequentlyUsedTech] = useState([
-    "HTML5",
-    "CSS3",
+    "HTML, CSS & SASS",
     "REACT",
-    "SASS",
-    "NODE",
-    "MONGODB",
+    "NODE & EXPRESS",
   ]);
-  const [activeUsedTech, setActiveUsedTech] = useState([
-    "HTML5",
-    "CSS3",
-    "SASS",
-  ]);
+  const [activeUsedTech, setActiveUsedTech] = useState([]);
   const myMemo = useMemo(() => {
     return techUsed;
   }, [techUsed]);
@@ -30,10 +27,12 @@ const ProjectFilter = () => {
       <p
         key={tech}
         className={`p-2 my-auto mx-1 ${
-          tech === "HTML5" || tech === "CSS3" || tech === "SASS"
+          tech === "HTML, CSS & SASS" ||
+          tech === "REACT" ||
+          tech === "NODE & EXPRESS"
             ? "bg-warning text-dark"
             : "bg-dark text-light"
-        }`}
+        } cursor-pointer`}
       >
         {tech}
       </p>
@@ -41,7 +40,7 @@ const ProjectFilter = () => {
   });
 
   const handleShowMore = () => {
-    console.log("handle show more");
+    setToggleShowMoreTechnology(!toggleShowMoreTechnology);
   };
   return (
     <div className="d-flex justify-content-center align-items-center text-dark mb-3">
@@ -52,6 +51,10 @@ const ProjectFilter = () => {
       >
         &#9660;
       </p>
+      <DisplayAllTechnologyUsed
+        technology={techUsed}
+        toggle={toggleShowMoreTechnology}
+      />
     </div>
   );
 };
