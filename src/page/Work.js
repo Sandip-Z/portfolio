@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Box from "../components/Box";
 import { works } from "../content/works";
+import ActiveTechnologyContext from "../context/ActiveTechnology.context";
 import ProjectFilter from "../components/ProjectFilter";
 import ScrollPosition from "../components/ScrollPosition";
 const Work = () => {
+  const activeTechnology = useContext(ActiveTechnologyContext);
   const shouldHighlight = (techused) => {
-    const activeTechnology = ["Bootstrap", "CSS3", "Chart.js"];
     let highlight = undefined;
     activeTechnology.forEach((activeTech) => {
       techused.forEach((usedTech) => {
