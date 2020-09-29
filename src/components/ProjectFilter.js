@@ -8,7 +8,10 @@ workCopy.forEach((work) => {
   tech.push(...work.technology);
 });
 
-const ProjectFilter = () => {
+const ProjectFilter = ({
+  activeTechnologies,
+  handleActiveTechnologiesChange,
+}) => {
   const [techUsed] = useState(Array.from(new Set(tech)));
   const [toggleShowMoreTechnology, setToggleShowMoreTechnology] = useState(
     false
@@ -43,7 +46,7 @@ const ProjectFilter = () => {
     setToggleShowMoreTechnology(!toggleShowMoreTechnology);
   };
   return (
-    <div className="d-flex justify-content-center align-items-center text-dark mb-3">
+    <div className="d-flex justify-content-center align-items-center mb-3">
       {renderTech}
       <p
         className="bg-dark text-light p-2 my-auto mx-1"
@@ -54,6 +57,8 @@ const ProjectFilter = () => {
       <DisplayAllTechnologyUsed
         technology={techUsed}
         toggle={toggleShowMoreTechnology}
+        activeTechnologies={activeTechnologies}
+        handleActiveTechnologiesChange={handleActiveTechnologiesChange}
       />
     </div>
   );

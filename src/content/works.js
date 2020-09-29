@@ -13,7 +13,7 @@ export const works = [
     title: "My Movies",
     description:
       "Create a watch, watching and watched list for favorite movies and share it with your friends.",
-    technology: ["MongoDB", "Express.js", "React.js", "Node"],
+    technology: ["MongoDB", "Express.js", "React", "Node"],
     code: "https://github.com/Sandip-Z/notebook.io_landing_page",
     live: "s",
     detail: true,
