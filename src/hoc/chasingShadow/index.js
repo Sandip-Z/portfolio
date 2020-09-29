@@ -5,7 +5,7 @@ function chasingShadow(Component) {
   return ({ ...props }) => {
     const [style, setStyle] = useState(undefined);
     const [deg, setDeg] = useState(undefined);
-    const defaultClassName = "box";
+    // const defaultClassName = "box";
 
     useEffect(() => {
       let style = {
@@ -52,10 +52,9 @@ function chasingShadow(Component) {
 
     return (
       <motion.div
-        className={`${defaultClassName}`}
+        className="d-flex"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        style={props.highlight ? { ...style } : { opacity: "0.2" }}
         variants={container}
         initial="hidden"
         animate="visible"
@@ -63,12 +62,11 @@ function chasingShadow(Component) {
           scale: props.highlight ? 1.07 : 1,
           borderRadius: 7,
         }}
-        whileTap={{
-          msTransformOrigin: "center",
-          scale: props.hightlight ? 2 : 1,
-        }}
       >
-        <Component {...props} />
+        <Component
+          {...props}
+          style={props.highlight ? { ...style } : { opacity: "0.2" }}
+        />
       </motion.div>
     );
   };

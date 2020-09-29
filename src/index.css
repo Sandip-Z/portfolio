@@ -69,7 +69,7 @@ code {
 .box {
   transition: 0.35s ease;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   width: 295px;
   height: auto;

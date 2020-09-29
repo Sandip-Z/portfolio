@@ -11,6 +11,7 @@ const Box = ({
   detail,
   id,
   highlight,
+  style,
 }) => {
   const history = useHistory();
   const getTechnology = () => {
@@ -40,9 +41,9 @@ const Box = ({
   };
   return (
     <div
-      className="d-flex flex-column cursor-pointer"
+      className="box cursor-pointer"
       onClick={navigateToDetail}
-      style={highlight ? { opacity: 1 } : { opacity: 0.2 }}
+      style={highlight ? { ...style } : { opacity: 0.2 }}
     >
       <div>
         <h5 className="mb-0 text-capitalize">{title || "Title"}</h5>
