@@ -7,27 +7,14 @@ const Work = () => {
   const [activeTechnologies, setActiveTechnologies] = useState([]);
 
   const handleActiveTechnologiesChange = (technology) => {
-    if (typeof technology !== "boolean" && !activeTechnologies.length) {
+    const indexInActiveTechnologies = activeTechnologies.indexOf(technology);
+    if (indexInActiveTechnologies === -1) {
       setActiveTechnologies([...activeTechnologies, technology]);
-      return;
+    } else {
+      const clonedActiveTechnologies = [...activeTechnologies];
+      clonedActiveTechnologies.splice(indexInActiveTechnologies, 1);
+      setActiveTechnologies(clonedActiveTechnologies);
     }
-
-    if (typeof technology === "boolean" && !technology) {
-      setActiveTechnologies([]);
-      return;
-    }
-
-    activeTechnologies.forEach((activeTech, index) => {
-      if (activeTech === technology) {
-        const clonedActiveTechnologies = [...activeTechnologies];
-        clonedActiveTechnologies.splice(index, 1);
-        // console.log(clonedActiveTechnologies);
-        setActiveTechnologies(clonedActiveTechnologies);
-        return;
-      } else {
-        setActiveTechnologies([...activeTechnologies, technology]);
-      }
-    });
   };
 
   const shouldHighlight = (techused) => {

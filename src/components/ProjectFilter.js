@@ -13,9 +13,9 @@ const ProjectFilter = ({
   handleActiveTechnologiesChange,
 }) => {
   // const [techUsed] = useState(Array.from(new Set(tech)));
-  const [toggleShowMoreTechnology, setToggleShowMoreTechnology] = useState(
-    false
-  );
+  // const [toggleShowMoreTechnology, setToggleShowMoreTechnology] = useState(
+  //   false
+  // );
   const [frequentlyUsedTech] = useState(["sass", "react", "node"]);
   // const [activeUsedTech, setActiveUsedTech] = useState([]);
   // const myMemo = useMemo(() => {
