@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import { works } from "../content/works";
 // import DisplayAllTechnologyUsed from "../components/Project/DisplayAllTechnologyUsed";
 
@@ -46,21 +46,21 @@ const ProjectFilter = ({
     );
   });
 
-  const handleShowMore = () => {
-    setToggleShowMoreTechnology(!toggleShowMoreTechnology);
-  };
+  // const handleShowMore = () => {
+  //   setToggleShowMoreTechnology(!toggleShowMoreTechnology);
+  // };
   return (
     <div className="d-flex justify-content-center align-items-center mb-3">
       {renderTech}
       <div className="technology-dropdown__wrapper">
-        <p
+        {/* <p
           className={`bg-dark text-light p-2 my-auto mx-1 d-none ${
             toggleShowMoreTechnology ? "rotate" : ""
           }`}
           onClick={handleShowMore}
         >
           &#9660;
-        </p>
+        </p> */}
         {/* <DisplayAllTechnologyUsed
           technology={techUsed}
           toggle={toggleShowMoreTechnology}
