@@ -7,13 +7,20 @@ const DisplayAllTechnologyUser = ({
   activeTechnologies,
 }) => {
   const isActive = (technology) => {
+    let active = undefined;
     activeTechnologies.forEach((activeTech) => {
       if (activeTech === technology) {
-        return { color: "yellow !important" };
+        console.log(activeTech, technology);
+        active = true;
       }
     });
-    return {};
+    if (active) {
+      return { color: "red" };
+    } else {
+      return { color: "black" };
+    }
   };
+  console.log(isActive("HTML5"));
   const renderTechnolgies = technology.map((tech) => {
     return (
       <li
@@ -29,10 +36,10 @@ const DisplayAllTechnologyUser = ({
     <>
       {toggle ? (
         <ul>
-          {renderTechnolgies}
           <li onClick={() => handleActiveTechnologiesChange(false)}>
             Clear All
           </li>
+          {renderTechnolgies}
         </ul>
       ) : (
         <></>

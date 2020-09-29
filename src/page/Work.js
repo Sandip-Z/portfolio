@@ -21,6 +21,7 @@ const Work = () => {
       if (activeTech === technology) {
         const clonedActiveTechnologies = [...activeTechnologies];
         clonedActiveTechnologies.splice(index, 1);
+        console.log(clonedActiveTechnologies);
         setActiveTechnologies(clonedActiveTechnologies);
         return;
       } else {

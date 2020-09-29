@@ -241,6 +241,28 @@ textarea:focus {
   transform: scale(2);
 }
 
+.technology-dropdown__wrapper {
+  position: relative;
+}
+
+.technology-dropdown__wrapper ul {
+  position: absolute;
+  top: 45px;
+  background: white;
+  z-index: 254;
+  padding: 0px;
+  margin: 0px;
+}
+
+.technology-dropdown__wrapper ul li {
+  list-style: none;
+  padding: 15px 35px;
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}
+
 @media only screen and (max-width: 992px) {
   .tNav {
     display: block;

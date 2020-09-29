@@ -15,9 +15,12 @@ const Box = ({
   const history = useHistory();
   const getTechnology = () => {
     if (technology && technology.length) {
-      const kbdRendered = technology.map((tech) => {
+      const kbdRendered = technology.map((tech, index) => {
         return (
-          <small key={tech} className="mr-2 font-weight-lighter">
+          <small
+            key={tech + index}
+            className="mr-2 font-weight-lighter text-uppercase"
+          >
             {tech}
           </small>
         );
